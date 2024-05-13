@@ -1,0 +1,108 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+	font-family: 'Orbitron', sans-serif;
+}
+
+body{
+	font-family: 'Orbitron', sans-serif;
+}
+
+/* Make the video cover the whole screen */
+video.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Style for the floating title with drop shadow */
+.title {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Drop shadow */
+    z-index: 2; /* Above the video grid */
+}
+
+/* Style for the video grid container */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+/* Style for the individual video elements */
+.video-item {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+
+.video-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Style for the fixed text at the bottom left with drop shadow */
+.bottom-right-text {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    opacity: 0.75;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Drop shadow */
+    z-index: 2; /* Above the video grid */
+}
+
+/* Style for randomly placed images */
+.random-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Above everything else */
+}
+
+/* Style for randomly placed videos */
+.random-videos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Above everything else */
+    display: flex;
+    gap: 20px;
+}
+
+.random-videos video {
+    width: 350px; /* Adjust the video size as needed */
+    height: 350px; /* Adjust the video size as needed */
+    transition: transform 0.2s, filter 0.3s; /* Add transitions for scaling and filter changes */
+    filter: grayscale(100%); /* Initial grayscale effect */
+}
+
+/* Hover effect to scale up and play the video, and add stylistic changes */
+.random-videos video:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%); /* Remove grayscale on hover */
+    opacity: 0.75;
+}

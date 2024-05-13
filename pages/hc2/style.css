@@ -1,0 +1,52 @@
+* {background-color:bisque;}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+
+body{
+	font-family: 'Gabriela', serif;
+}
+
+p{
+	font-size: 25px;
+	text-align: justify;
+}
+
+p.alex{
+	text-decoration: underline;
+	line-height: 300%;
+	letter-spacing: 10px;
+	text-align: left
+
+}
+
+p.JaiPaul{
+	width = 100px;
+	height = 200px;
+}
+
+p.AMAQU{
+	width = 100px;
+	height = 200px;
+	text-align: right;
+
+}
+
+p.underline{
+	text-decoration: underline;
+
+}
+
+#hex{
+	color: #008B8B;
+}
+
+#darksalmon{
+	color: darksalmon;
+}
+
+#maroon{
+	color: maroon;
+}
+
+footer {background-color: darksalmon;}

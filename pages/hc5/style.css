@@ -1,0 +1,58 @@
+* {background-color:mediumseagreen;}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Young+Serif&display=swap');
+
+
+body{
+	font-family: 'Gabriela', serif;
+font-family: 'Young Serif', serif;
+}
+
+body {
+  background-image: url("100.jpeg");
+}
+
+.section4{
+	background-image: url("kingkrule.jpeg");
+	padding: 20px;
+	max-height: 100px;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 50px;
+}
+.halfopacity{
+	opacity: 0.5;
+}
+
+
+p{
+	font-size: 25px;
+	text-align: justify;
+}
+
+p.subtitle{
+	text-decoration: underline;
+	line-height: 300%;
+	letter-spacing: 10px;
+	text-align: left
+
+}
+
+
+img {
+  border: 3px dotted; #088395;
+}
+
+#hex{
+	color: #1F4172;
+}
+
+#hex2{
+	color: #FFBFBF;
+}
+
+
+footer {background-color: mediumturquoise;}

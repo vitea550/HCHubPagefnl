@@ -1,0 +1,85 @@
+* {background-color:lightcoral;}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Young+Serif&display=swap');
+
+
+body{
+	ffont-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+body {
+  background-image: url("CROWD1.jpg");
+}
+
+
+#gallery {
+    display: flex;
+    max-width: 2000px;
+    margin: 20px auto;
+    padding: 20px;
+	max-height: 800px;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+}
+
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.gallery-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjusted box shadow on hover */
+}
+
+
+.gallery-item:hover .image-overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    text-align: center;
+}
+
+ 
+
+p{
+	font-size: 25px;
+	text-align: center;
+	color: white;
+}
+
+img {
+  border: 7px dotted; #088395;
+  size: 300px;
+  z-index: 10;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  z-index: 2;
+  justify-content: center;
+
+

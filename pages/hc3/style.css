@@ -1,0 +1,39 @@
+* {background-color:lightblue;}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+
+body{
+	font-family: 'Gabriela', serif;
+}
+
+p{
+	font-size: 25px;
+	text-align: justify;
+}
+
+p.subtitle{
+	text-decoration: underline;
+	line-height: 300%;
+	letter-spacing: 10px;
+	text-align: left
+
+}
+
+.imageborder{
+	box-sizing: border-box;
+	border: red dotted 2px;
+	border-radius: 5px;
+}
+
+
+
+#hex{
+	color: #5bb20f;
+}
+
+#hex2{
+	color: #FFA07A;
+}
+
+footer {background-color: darksalmon;}

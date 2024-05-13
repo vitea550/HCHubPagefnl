@@ -1,0 +1,48 @@
+* {background-color:lightpink;}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Young+Serif&display=swap');
+
+
+body{
+	font-family: 'Gabriela', serif;
+font-family: 'Young Serif', serif;
+}
+
+body {
+  background-image: url("deanblunt.jpeg");
+}
+
+
+p{
+	font-size: 25px;
+	text-align: justify;
+}
+
+p.subtitle{
+	text-decoration: underline;
+	line-height: 300%;
+	letter-spacing: 10px;
+	text-align: left
+
+}
+
+img {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+img {
+  border: 3px dotted; #088395;
+}
+
+#hex{
+	color: #1F4172;
+}
+
+#hex2{
+	color: #088395;
+}
+
+
+footer {background-color: darksalmon;}
